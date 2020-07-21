@@ -1,0 +1,174 @@
+@media(max-width:370px){
+.img{
+    width: 100%;
+    height: 85%;
+    padding-top: 15%;
+
+}
+.img-logo{
+    width: 18%;
+    height: 95%;
+    position: relative;
+    left: 1%;
+}
+.form{
+    
+    /*box-shadow:  4px 4px 4px 4px #ECE8E8;*/
+    box-shadow: 0 0 0 0.2em #ECE8E8;
+    border: 10px #9b8a8a ;
+    border-radius: 20px 20px 20px 20px ;
+    height: 500px;    
+    width:  100px ;
+    padding-top: 5%; 
+}
+.divForm{
+    width: 90%;
+    height: 100%;
+
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 4%;
+    padding-bottom: 2%;
+}
+
+.submit{
+    text-align: center;
+    color: white;
+    background-color: #FF3366;
+    border-radius:  20px 20px 20px 20px;
+    width: 150px;
+    height: 50px;
+
+}
+
+.div-text{
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 19%;
+    padding-right: 18%;
+}
+.titulo{
+    font-family:  Roboto;
+    color: #000000;
+}
+
+.div-titulo{
+    padding-top: 2%
+}
+
+.parrafo{
+    font-size: Roboto;
+    color: grey; 
+    font-size: 14.5px;
+    font-weight: 550;
+    line-height: 16px;
+}
+
+
+
+.logo{
+    padding-top: 4%;
+}
+
+.label{
+    font-size:Roboto;
+    font-weight: bolder;
+    color: #000000;
+    font-size: 15px;
+
+}
+
+.div-container{
+    padding-right: 13%;
+    padding-left: 13%;
+    padding-top: 2%;
+    
+}
+
+}
+
+.img{
+    width: 100%;
+    height: 85%;
+    padding-top: 15%;
+
+}
+.img-logo{
+    width: 18%;
+    height: 95%;
+    position: relative;
+    left: 1%;
+}
+.form{
+    
+    /*box-shadow:  4px 4px 4px 4px #ECE8E8;*/
+    box-shadow: 0 0 0 0.2em #ECE8E8;
+    border: 10px #9b8a8a ;
+    border-radius: 20px 20px 20px 20px ;
+    height: 500px;    
+    width:  100px ;
+    padding-top: 5%; 
+}
+.divForm{
+    width: 90%;
+    height: 100%;
+
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 4%;
+    padding-bottom: 2%;
+}
+
+.submit{
+    text-align: center;
+    color: white;
+    background-color: #FF3366;
+    border-radius:  20px 20px 20px 20px;
+    width: 150px;
+    height: 50px;
+
+}
+
+.div-text{
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 19%;
+    padding-right: 18%;
+}
+.titulo{
+    font-family:  Roboto;
+    color: #000000;
+}
+
+.div-titulo{
+    padding-top: 2%
+}
+
+.parrafo{
+    font-size: Roboto;
+    color: grey; 
+    font-size: 14.5px;
+    font-weight: 550;
+    line-height: 16px;
+}
+
+
+
+.logo{
+    padding-top: 4%;
+}
+
+.label{
+    font-size:Roboto;
+    font-weight: bolder;
+    color: #000000;
+    font-size: 15px;
+
+}
+
+.div-container{
+    padding-right: 13%;
+    padding-left: 13%;
+    padding-top: 2%;
+    
+}

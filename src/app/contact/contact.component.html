@@ -1,0 +1,91 @@
+<div class="container">
+    <div class="row container container-fluid logo">
+        <div class="col text-center"><img class=" img-logo" src="../assets/sigma-logo.png" /></div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col  container container-fluid div-titulo">
+            <h3 class="text-center titulo">Prueba de desarrollo Sigma</h3>
+        </div>
+    </div>
+    <div class="row justify-content-md-center div-text">
+        <div class="col">
+            <p class="text-center parrafo">lorem Ipsum is simply dummy text of printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since 1500s, when an unknow printer
+                took a gallery of type and scrambled it to make a type pecimen book
+            </p>
+        </div>
+    </div>
+    <div class="row div-container">
+        <div class="col container container-fluid">
+            <img src="../assets/sigma-image.png" class="img" />
+        </div>
+        <div class="col form container container-fluid ">
+            <div>
+                <form class="divForm" (ngSubmit)="onSubmit()" [formGroup]="formulario">
+                    <div class="form-group container container-fluid">
+                        <label class="label">Departamento*</label>
+                        <select class="form-control" (change)="getCity($event.target.value)" name="state"
+                            [(ngModel)]="contact.state" formControlName="state">
+                            <option [value]="item.key" *ngFor="let item of departments | keyvalue">{{item.key}}
+                            </option>
+                        </select>
+                        <div class="alert-danger" *ngIf="state.invalid && (state.dirty || state.touched)">
+                            <div *ngIf="state.errors.required">
+                                state is required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group container container-fluid"><label class="label">Ciudad*</label>
+                        <select class="form-control" name="city" [(ngModel)]="contact.city" formControlName="city">
+                            <option [value]="city" *ngFor="let city of citys">{{city}}</option>
+                        </select>
+                        <div class="alert-danger" *ngIf="city.invalid && (city.dirty || city.touched)">
+                            <div *ngIf="city.errors.required">
+                                city is required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group container container-fluid"><label class="label">Nombre*</label><input
+                            name="name" type="text" class="form-control" placeholder="Pepito de jesus"
+                            [(ngModel)]="contact.name" formControlName="name" />
+                        <div class="alert-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+                            <div *ngIf="name.errors.required">
+                                name is required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group container container-fluid"><label class="label">Correo*</label><input
+                            name="email" type="email" class="form-control" placeholder="pepitodejesus@gmail.com"
+                            [(ngModel)]="contact.email" formControlName="email" />
+                        <div class="alert-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
+                            <div *ngIf="email.errors.required">
+                                email is required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group container container-fluid" style="text-align: center;">
+                        <button type="submit"
+                            class="btn submit" [disabled]="!formulario.valid" >Enviar</button> </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="success">Tu información ha sido recibida satisfactoriamente</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" (click)="closeModal()" class="btn btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
